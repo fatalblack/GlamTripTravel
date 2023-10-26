@@ -12,10 +12,24 @@ const Navbar = () => {
   // });
 
   return (
-    <div className="flex bg-zinc-600 px-5 justify-center">
-      <Link to={"/"} className="font-semibold text-xl p-2">
-        Logo
-      </Link>
+    <div id="navbar">
+      <div className="flex bg-zinc-600 justify-center">
+        <img src="logo-9.svg" className="logo" />
+        
+        <div className="fake-link-bar">
+          <a href="#home">
+            Home
+          </a>
+          &nbsp;|&nbsp;
+          <a href="#services">
+            Servicios
+          </a>
+          &nbsp;|&nbsp;
+          <a href="#formulario">
+            Formulario
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

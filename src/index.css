@@ -27,3 +27,73 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+/*fuentes marca*/
+@font-face {
+  font-family: KompotSans;
+  src: url(fonts/KompotSans.woff);
+}
+@font-face {
+  font-family: Manjari-Thin;
+  src: url(fonts/Manjari-Thin.woff);
+}
+@font-face {
+  font-family: Manjari-Regular;
+  src: url(fonts/Manjari-Regular.woff);
+}
+@font-face {
+  font-family: Manjari-Bold;
+  src: url(fonts/Manjari-Bold.woff);
+}
+
+.section-title {
+  font-family: 'KompotSans';
+  font-size: 34px;
+}
+
+.section-subtitle {
+  font-family: 'Manjari-Regular';
+  font-size: 22px;
+}
+
+.section-text {
+  font-family: 'Manjari-Thin';
+  font-size: 18px;
+}
+
+/*estilos provisorios*/
+#navbar {
+  background-color: #2B85A1;
+}
+
+#navbar .logo {
+  max-height: 300px;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: block;
+}
+
+.fake-section-1{
+  min-height: 300px;
+}
+.fake-section-2{
+  min-height: 300px;
+  background-color: #FFC891;
+}
+.fake-link-bar{
+  padding-bottom: 10px;
+}
+.fake-link-bar a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Manjari-Thin';
+  font-size: 20px;
+}

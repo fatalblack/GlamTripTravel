@@ -1,7 +1,9 @@
 import React from "react";
 
 const Cards = () => {
-  return <div className="text-center">Carta de presentacion de planes</div>;
+  return <div id="services" className="text-center fake-section-2">
+    <div className="section-title">Carta de presentacion de planes</div>
+  </div>;
 };
 
 export default Cards;

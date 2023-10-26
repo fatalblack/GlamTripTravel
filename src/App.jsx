@@ -16,13 +16,15 @@ function App() {
   return (
     <div className="flex flex-col">
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="/" />
           <Route path="/Home" element={<Home />} />
           <Route path="/Formulario" element={<Formulario />} />
         </Routes>
+        <Navbar />
+        <Home />
         <Cards />
+        <Formulario />
         <Footer />
       </BrowserRouter>
     </div>
