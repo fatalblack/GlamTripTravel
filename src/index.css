@@ -1,31 +1,6 @@
+/*variables*/
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  --gtt-color-blue: #2B85A1;
 }
 
 /*fuentes marca*/
@@ -46,28 +21,10 @@ body {
   src: url(fonts/Manjari-Bold.woff);
 }
 
-.section-title {
-  font-family: 'KompotSans';
-  font-size: 34px;
-}
-
-.section-subtitle {
-  font-family: 'Manjari-Regular';
-  font-size: 22px;
-}
-
-.section-text {
-  font-family: 'Manjari-Thin';
-  font-size: 18px;
-}
-
-/*estilos provisorios*/
-#navbar {
-  background-color: #2B85A1;
-}
-
-#navbar .logo {
-  max-height: 300px;
+/*estilos finales*/
+body {
+  display: block;
+  overflow-x: hidden;
 }
 
 #root {
@@ -77,23 +34,242 @@ body {
   padding: 0px;
 }
 
-body {
-  display: block;
+.vertical-align {
+  top: 50%!important;
+  left: 0px;
+  position: relative;
 }
 
-.fake-section-1{
-  min-height: 300px;
+.text-left {
+  text-align: left;
 }
-.fake-section-2{
-  min-height: 300px;
-  background-color: #FFC891;
+
+/*header y navbar*/
+.gtt-header {
+  height: 680px;
+  max-height: 680px;
+
+  background-image: url('header-background.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
 }
-.fake-link-bar{
-  padding-bottom: 10px;
+
+.gtt-navbar {
+  display: flex;
+  padding: 0px;
+
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.fake-link-bar a{
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Manjari-Thin';
+
+.gtt-navbar .gtt-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.gtt-navbar .gtt-links {
+  width: 100%;
+  text-align: right;
+}
+
+.gtt-navbar a {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  font-family: 'Manjari-Regular';
   font-size: 20px;
+  text-decoration: none;
+  
+  color: black;
+}
+
+.gtt-header .container {
+  max-width: 100%;
+}
+
+.gtt-header-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 80px);
+  width: 100%;
+  top: 0;
+
+  font-size: 38px;
+  color: white;
+}
+
+/*buttons*/
+.gtt-button {
+  height: 40px;
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 30px;
+
+  line-height: 24px;
+  font-family: 'Manjari-Regular';
+  font-size: 24px;
+  text-decoration: none;
+
+  border-radius: 5px;
+  color: white;
+  background-color: var(--gtt-color-blue);
+}
+
+.gtt-button-alt {
+  height: 30px;
+  width: fit-content;
+  display: inline-block;
+  padding: 6px 20px;
+
+  line-height: 20px;
+  font-family: 'Manjari-Regular';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.gtt-button .gtt-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.gtt-button-circle-icon-black {
+  height: 36px;
+  width: 36px;
+  margin: 0px 20px;
+  
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+
+  border-radius: 50%;
+}
+
+.gtt-button-circle-icon-black.whatsapp {
+  background-image: url('icons/whatsapp-white.svg');
+}
+.gtt-button-circle-icon-black.facebook {
+  background-image: url('icons/facebook-white.svg');
+}
+.gtt-button-circle-icon-black.linkedin {
+  background-image: url('icons/linkedin-white.svg');
+}
+.gtt-button-circle-icon-black.instagram {
+  background-image: url('icons/instagram-white.svg');
+}
+.gtt-button-circle-icon-black.twitter {
+  background-image: url('icons/twitter-white.svg');
+}
+
+/*sitios visitar*/
+.gtt-place-container {
+  margin-top: -28px;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gtt-place-card {
+  height: 244px;
+  width: 163px;
+  margin: 12px;
+  position: relative;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  box-shadow: 3px 3px 14px;
+}
+
+.gtt-place-title {
+  margin-top: 10px;
+
+  font-size: 24px;
+  font-family: 'Manjari-Regular';
+
+  color: var(--gtt-color-blue);
+}
+
+.gtt-place-name {
+  margin: 0px 0px 18px 10px;
+  position: absolute;
+  bottom: 0;
+
+  font-size: 18px;
+  font-family: 'Manjari-Bold';
+  color: white;
+  text-align: left;
+}
+
+.gtt-place-ciudad-cordoba {
+  background-image: url('places/place-ciudad-cordoba.jpg');
+}
+.gtt-place-villa-carlos-paz {
+  background-image: url('places/place-villa-carlos-paz.jpg');
+}
+.gtt-place-la-cumbrecita {
+  background-image: url('places/place-la-cumbrecita.jpg');
+}
+.gtt-place-villa-general-belgrano {
+  background-image: url('places/place-villa-general-belgrano.jpg');
+}
+.gtt-place-laguna-mar-chiquita {
+  background-image: url('places/place-laguna-mar-chiquita.jpg');
+}
+
+/*general*/
+.gtt-section-container {
+  margin: 30px 10px;
+}
+
+.gtt-section-title {
+  margin-bottom: 30px;
+
+  line-height: 50px;
+  font-size: 40px;
+  font-family: 'Manjari-Bold';
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.gtt-section-title::after {
+  content: '';
+  display: block;
+  width: 82px;
+  border-bottom: 4px solid var(--gtt-color-blue);
+  border-radius: 4px;
+}
+
+/*contact*/
+.gtt-contact-option {
+  height: 36px;
+  margin: 34px 24px;
+  display: flex;
+
+  line-height: 42px;
+  font-size: 20px;
+  font-family: 'Manjari-Regular';
+  color: black;
+  text-decoration: none;
+}
+
+.gtt-map {
+  width: 100%;
+}
+
+/*footer*/
+footer {
+  background-color: var(--gtt-color-blue);
+
+  color: white;
 }

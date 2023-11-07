@@ -1,16 +1,18 @@
 import { useState } from "react";
 import "./App.css";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Formulario from "./components/Formulario";
-import Footer from "./components/footer";
+import NavbarHeader from "./components/NavbarHeader";
+import Footer from "./components/Footer";
+import Places from "./components/Places";
+import Services from "./components/Services";
+import AboutUs from "./components/AboutUs";
+import Testimonials from "./components/Testimonials";
+import ContactUs from "./components/ContactUs";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   BrowserRouter,
 } from "react-router-dom";
-import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -18,13 +20,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Formulario" element={<Formulario />} />
+          <Route path="/Home" element={<NavbarHeader />} />
         </Routes>
-        <Navbar />
-        <Home />
-        <Cards />
-        <Formulario />
+        <NavbarHeader />
+        <Places />
+        <Services />
+        <AboutUs />
+        <Testimonials />
+        <ContactUs />
         <Footer />
       </BrowserRouter>
     </div>
