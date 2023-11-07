@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Col, Row } from "react-bootstrap";
 
 const NavbarHeader = () => {
   // Esto es una idea en desarrollo
@@ -33,9 +34,9 @@ const NavbarHeader = () => {
           </Container>
         </Navbar>
         <div className="container gtt-header-description">
-          <div className="row w-100">
-            <div className="col-xs-0 col-md-3"></div>
-            <div className="col-xs-12 col-md-6 text-left">
+          <Row className="w-100">
+            <Col xs="0" md="3"></Col>
+            <Col xs="12" md="6">
               <div className="text-left">
                 <div>tu pr&oacute;xima aventura</div>
                 <a className="gtt-button" href="#">
@@ -43,9 +44,9 @@ const NavbarHeader = () => {
                   Escribinos
                 </a>
               </div>
-            </div>
-            <div className="col-xs-0 col-md-3"></div>
-          </div>
+            </Col>
+            <Col xs="0" md="3"></Col>
+          </Row>
         </div>
       </div>
     </>
