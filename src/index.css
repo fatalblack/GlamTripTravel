@@ -1,6 +1,8 @@
 /*variables*/
 :root {
   --gtt-color-blue: #2B85A1;
+  --gtt-color-orange: #F6A568;
+  --gtt-color-orange-alt: #EDAE6F;
 }
 
 /*fuentes marca*/
@@ -237,7 +239,7 @@ body {
   line-height: 50px;
   font-size: 40px;
   font-family: 'Manjari-Bold';
-  color: black;
+  color: var(--gtt-color-orange);
   text-align: left;
   text-transform: uppercase;
 }
@@ -267,9 +269,110 @@ body {
   width: 100%;
 }
 
+.gtt-form {
+  background-color: var(--gtt-color-blue);
+
+  color: var(--gtt-color-orange-alt);
+}
+
+.gtt-form-title {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  font-family: 'Manjari-Bold';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gtt-form-title::after {
+  content: '';
+  display: block;
+  width: 66px;
+  margin-left: calc(50% - 33px);
+  border-bottom: 4px solid white;
+  border-radius: 4px;
+}
+
+.gtt-for-row {
+  margin: 0px 78px 20px 78px;
+}
+
+.gtt-form-label {
+  width: 100%;
+  margin-bottom: 10px;
+
+  line-height: 20px;
+  font-size: 20px;
+  font-family: 'Manjari-Bold';
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.gtt-form-input {
+  border-radius: 0;
+  
+  font-size: 18px;
+  font-family: 'Manjari-Regular';
+  color: black;
+}
+
+input.gtt-form-input {
+  height: 50px;
+}
+
+textarea.gtt-form-input {
+  white-space: pre-line;
+}
+
+.gtt-button-submit {
+  padding: 14px 36px;
+  margin-bottom: 36px;
+
+  line-height: 20px;
+  font-size: 20px;
+  font-family: 'Manjari-Regular';
+  color: white;
+
+  background-color: var(--gtt-color-orange-alt);
+
+  border: none;
+}
+.gtt-button-submit:hover {
+  background-color: var(--gtt-color-orange-alt);
+
+  color: black;
+
+  border: none;
+}
+
+
 /*footer*/
 footer {
   background-color: var(--gtt-color-blue);
 
   color: white;
+}
+
+/*Loader*/
+.gtt-loader-full-size {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.gtt-loader-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -25px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
 }
