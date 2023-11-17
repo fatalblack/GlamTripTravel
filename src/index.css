@@ -55,7 +55,6 @@ body {
   height: 680px;
   max-height: 680px;
 
-  background-image: url('header-background.jpg');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -158,21 +157,6 @@ body {
   border-radius: 50%;
 }
 
-.gtt-button-circle-icon-black.whatsapp {
-  background-image: url('icons/whatsapp-white.svg');
-}
-.gtt-button-circle-icon-black.facebook {
-  background-image: url('icons/facebook-white.svg');
-}
-.gtt-button-circle-icon-black.linkedin {
-  background-image: url('icons/linkedin-white.svg');
-}
-.gtt-button-circle-icon-black.instagram {
-  background-image: url('icons/instagram-white.svg');
-}
-.gtt-button-circle-icon-black.twitter {
-  background-image: url('icons/twitter-white.svg');
-}
 
 /*sitios visitar*/
 .gtt-place-container {
@@ -217,22 +201,6 @@ body {
   font-family: 'Manjari-Bold';
   color: white;
   text-align: left;
-}
-
-.gtt-place-ciudad-cordoba {
-  background-image: url('places/place-ciudad-cordoba.jpg');
-}
-.gtt-place-villa-carlos-paz {
-  background-image: url('places/place-villa-carlos-paz.jpg');
-}
-.gtt-place-la-cumbrecita {
-  background-image: url('places/place-la-cumbrecita.jpg');
-}
-.gtt-place-villa-general-belgrano {
-  background-image: url('places/place-villa-general-belgrano.jpg');
-}
-.gtt-place-laguna-mar-chiquita {
-  background-image: url('places/place-laguna-mar-chiquita.jpg');
 }
 
 /*general*/
@@ -402,7 +370,6 @@ footer {
   width: 100%;
   height: 102px;
 
-  background-image: url('icons/quotes-blue.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 58px 46px;
@@ -442,4 +409,13 @@ footer {
   display: flex;
   justify-content: center;
   margin: 0 1px;
+}
+
+/*fix carousel*/
+.react-multiple-carousel__arrow--left:before {
+  content: "<" !important;
+}
+
+.react-multiple-carousel__arrow--right:before {
+  content: ">" !important;
 }

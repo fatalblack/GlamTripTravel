@@ -18,7 +18,7 @@ const NavbarHeader = () => {
 
   return (
     <>
-      <div id="navbar" className="gtt-header">
+      <div id="navbar" className="gtt-header" style={{backgroundImage: "url('header-background.jpg')"}}>
         <Navbar collapseOnSelect expand="lg" className="gtt-navbar">
           <Container>
             <Navbar.Brand href="#home"><img src="logo-3.svg" className="gtt-logo"></img></Navbar.Brand>

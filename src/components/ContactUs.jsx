@@ -12,23 +12,23 @@ const ContactUs = () => {
                     Cont&aacute;ctanos
                 </div>
                 <a className="gtt-contact-option" href={CONFIG_LinkWhatsapp} target="_blank" rel="noopener noreferrer">
-                    <div className="gtt-button-circle-icon-black whatsapp"></div>
+                    <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/whatsapp-white.svg')"}}></div>
                     38 6960302
                 </a>
                 <a className="gtt-contact-option" href={CONFIG_LinkFacebook} target="_blank" rel="noopener noreferrer">
-                    <div className="gtt-button-circle-icon-black facebook"></div>
+                    <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/facebook-white.svg')"}}></div>
                     Glam Trip Travel
                 </a>
                 <a className="gtt-contact-option" href={CONFIG_LinkLinkedin} target="_blank" rel="noopener noreferrer">
-                    <div className="gtt-button-circle-icon-black linkedin"></div>
+                    <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/linkedin-white.svg')"}}></div>
                     Glam Trip Travel
                 </a>
                 <a className="gtt-contact-option" href={CONFIG_LinkInstagram} target="_blank" rel="noopener noreferrer">
-                    <div className="gtt-button-circle-icon-black instagram"></div>
+                    <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/instagram-white.svg')"}}></div>
                     Glam Trip Travel
                 </a>
                 <a className="gtt-contact-option" href={CONFIG_LinkTwitter} target="_blank" rel="noopener noreferrer">
-                    <div className="gtt-button-circle-icon-black twitter"></div>
+                    <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/twitter-white.svg')"}}></div>
                     Glam Trip Travel
                 </a>
             </Col>
