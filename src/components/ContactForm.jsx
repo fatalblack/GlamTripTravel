@@ -1,16 +1,30 @@
 import { useState } from "react";
 import { Row, Col, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { CONFIG_EmailTo, CONFIG_EmailSenderUrl, CONFIG_EmailSenderToken } from '../Constants'
-import Loader from './Loader'
+import { CONFIG_EmailTo, CONFIG_EmailSenderUrl, CONFIG_EmailSenderToken } from '../Constants';
+import Loader from './Loader';
+import AlertDismissible from "./AlertDismissible";
 
 const ContactForm = () => {
     const [showLoader, setShowLoader] = useState(false)
+    const [alertShow, setAlertShow] = useState(false);
+    const [alertVariant, setAlertVariant] = useState("danger");
+    const [alertTitle, setAlertTitle] = useState("");
+    const [alertMessage, setAlertMessage] = useState("");
+    const alertCloseCallback = () => setAlertShow(false);
 
     const showAlert = (isError, errorMessage) => {
         if(isError === true){
-            alert(errorMessage);
+            setAlertVariant("danger");
+            setAlertTitle("¡Error al intentar enviar el email!");
+            setAlertMessage(errorMessage);
+        }else{
+            setAlertVariant("success");
+            setAlertTitle("¡Genial!");
+            setAlertMessage("Se envió su consulta.");
         }
+
+        setAlertShow(true);
     }
 
     const sendMail = (event) =>{
@@ -52,15 +66,15 @@ const ContactForm = () => {
                         form.contact.value = "";
                         form.message.value = "";
                     }else{
-                        showAlert(true, "Error al intentar enviar el email: " + res.Message);
+                        showAlert(true, res.Message);
                     }
                 });
             }else{
-                showAlert(true, "Error al intentar enviar el email: " + response.statusText);
+                showAlert(true, response.statusText);
             }
         })
         .catch(function (error) {
-            showAlert(true, "Error al intentar enviar el email: " + error);
+            showAlert(true, error);
         }).finally(() => {
             setShowLoader(false);
         });
@@ -86,6 +100,7 @@ const ContactForm = () => {
                             <Form.Control as="textarea" rows={3} className="gtt-form-input" required />
                         </Form.Group>
                         <Button type="submit" className="gtt-button-submit">Saber m&aacute;s</Button>
+                        <AlertDismissible show={alertShow} variant={alertVariant} title={alertTitle} message={alertMessage} closeCallback={alertCloseCallback} />
                     </Form>
                 </Col>
                 <Col xs="0" md="2"></Col>

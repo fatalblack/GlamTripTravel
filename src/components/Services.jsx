@@ -1,5 +1,3 @@
-import React from "react";
-
 const Services = () => {
   return (
     <div id="Services" className="gtt-section-container">

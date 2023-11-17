@@ -1,5 +1,3 @@
-import React from "react";
-
 const Places = () => {
   return (
     <div className="gtt-place-container">
@@ -28,7 +26,10 @@ const Places = () => {
                 Laguna Mar <br/> Chiquita
             </div>
         </div>
-        <div className="gtt-place-title">estos y muchos otros lugares te esperan</div>
+        <div className="gtt-place-title">Estos y muchos otros lugares te esperan</div>
+        <div className="gtt-place-down">
+            <img src="stickers/down.svg"></img>
+        </div>
     </div>
   );
 };

@@ -7,17 +7,17 @@ const Testimonials = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 2
     },
     desktop: {
       breakpoint: { max: 3000, min: 1220 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1220, min: 820 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 820, min: 0 },

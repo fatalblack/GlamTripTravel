@@ -1,7 +1,6 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import ContactForm from './ContactForm';
-import { CONFIG_LinkWhatsapp, CONFIG_LinkFacebook, CONFIG_LinkLinkedin, CONFIG_LinkInstagram, CONFIG_LinkTwitter } from '../Constants'
+import { CONFIG_LinkWhatsapp, CONFIG_LinkFacebook, CONFIG_LinkLinkedin, CONFIG_LinkInstagram, CONFIG_LinkTwitter, CONFIG_Phone } from '../Constants'
 
 const ContactUs = () => {
   return (
@@ -13,7 +12,7 @@ const ContactUs = () => {
                 </div>
                 <a className="gtt-contact-option" href={CONFIG_LinkWhatsapp} target="_blank" rel="noopener noreferrer">
                     <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/whatsapp-white.svg')"}}></div>
-                    38 6960302
+                    {CONFIG_Phone}
                 </a>
                 <a className="gtt-contact-option" href={CONFIG_LinkFacebook} target="_blank" rel="noopener noreferrer">
                     <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('icons/facebook-white.svg')"}}></div>
