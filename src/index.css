@@ -94,6 +94,11 @@ body {
   color: white !important;
 }
 
+.gtt-header-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 .gtt-header .container {
   max-width: 100%;
   position: absolute;
@@ -118,7 +123,7 @@ body {
   width: 125px;
   float: right;
 
-  background-color: #2B85A1;
+  background-color: var(--gtt-color-blue);
 
   line-height: 50px;
   color: white;
@@ -131,7 +136,7 @@ body {
   height: 122px;
   width: 122px;
   display: block;
-  top: 50%;
+  top: 288px;
   right: 20px;
   position: absolute;
 
@@ -153,13 +158,68 @@ body {
   margin-top: -60px;
 }
 
-@media (max-width: 768px){
+.gtt-header-white-shadow {
+  height: 40px;
+  margin-top: -40px;
+  background-image: linear-gradient(transparent, white);
+}
+
+.gtt-languages {
+  margin-left: 15%;
+}
+
+.gtt-languages a {
+  display: flex;
+  padding: 2px 5px;
+  width: 90%;
+}
+
+.gtt-languages a:hover, .gtt-languages a.active {
+  color: white;
+  background-color: transparent;
+}
+
+.gtt-languages .dropdown-toggle::after {
+  margin-top: 30%;
+  
+  color: white !important;
+}
+
+.gtt-languages-button {
+  height: 50px;
+  width: 50px;
+  margin: 0px 2px;
+  
+  background-color: rgba(0,0,0, 0.3);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+
+  border-radius: 50%;
+}
+
+.gtt-languages .dropdown-menu {
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 5px;
+}
+
+@media (max-width: 660px) {
   .gtt-nav-whatsapp {
     height: 61px;
     width: 61px;
-    top: 40%;
+    top: 0px;
+    margin-top: 41%;
   }
-
+}
+@media (min-width: 661px) and (max-width: 768px) {
+  .gtt-nav-whatsapp {
+    height: 61px;
+    width: 61px;
+    top: 0px;
+    margin-top: 36%;
+  }
+}
+@media (max-width: 768px){
   .gtt-nav-whatsapp img {
     height: 35px;
     margin-top: 13px;
@@ -177,6 +237,24 @@ body {
     width: 100%;
     z-index: 20;
     left: 0;
+
+    border-radius: 5px
+  }
+}
+
+@media (max-width: 991px){
+  .gtt-languages {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1008px){
+  .gtt-languages {
+    margin-left: 8%;
+  }
+}
+@media (min-width: 1260px){
+  .gtt-languages {
+    margin-left: 19%;
   }
 }
 
@@ -491,6 +569,18 @@ footer {
   border-radius: 20px;
 }
 
+.gtt-customer-card-big-size {
+  width: 80%;
+  max-width: 80%;
+  height: fit-content;
+  margin: 14px 17px;
+
+  background-color: var(--gtt-color-blue);
+
+  box-shadow: 3px 3px 10px;
+  border-radius: 20px;
+}
+
 .gtt-customer-quote {
   width: 100%;
   height: 35px;
@@ -511,6 +601,32 @@ footer {
   font-family: 'Inter-Regular';
   font-size: 40px;
   color: white;
+}
+
+.gtt-customer-description-big-size {
+  width: 90%;  
+  min-height: 270px;
+  padding: 0px 20px;
+  margin-left: 5%;
+
+  line-height: 42px;
+  font-family: 'Inter-Regular';
+  font-size: 30px;
+  color: white;
+}
+
+.gtt-customer-name {
+  width: 90%; 
+  padding: 0px 20px;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  line-height: 46px;
+  font-family: 'Inter-Regular';
+  font-size: 34px;
+  color: white;
+  font-weight: 600;
 }
 
 .gtt-customer-footer {
@@ -619,10 +735,49 @@ footer {
   border-radius: 40px;
 }
 
+.gtt-interesting-data-number-big {
+  width: 120px;
+  height: 120px;
+  margin: 24px auto 12px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  font-family: 'Inter-Regular';
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+
+  background-color: var(--gtt-color-orange);
+
+  border-radius: 50%;
+}
+
 .gtt-interesting-data-description {
   width: 132px;
   height: 22px;
   margin: 12px 12px 24px 12px;
+
+  font-family: 'Inter-Regular';
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  text-align: center;
+
+  background-color: var(--gtt-color-orange);
+}
+
+.gtt-interesting-data-description-big {
+  width: 182px;
+  height: 44px;
+  margin: 12px 12px 24px 12px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 
   font-family: 'Inter-Regular';
   font-size: 18px;

@@ -92,7 +92,7 @@ const ContactForm = () => {
                             <Form.Control type="text" placeholder="" className="gtt-form-input" required />
                         </Form.Group>
                         <Form.Group className="gtt-for-row" controlId="contact">
-                            <Form.Label className="gtt-form-label">Tel&eacute;fono / Email</Form.Label>
+                            <Form.Label className="gtt-form-label">Email</Form.Label>
                             <Form.Control type="text" placeholder="" className="gtt-form-input" required />
                         </Form.Group>
                         <Form.Group className="gtt-for-row" controlId="message">

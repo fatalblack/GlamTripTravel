@@ -3,20 +3,20 @@ import { Col, Row } from "react-bootstrap";
 const InterestingData = () => {
     const data = [
         {
-            "number": 9999,
-            "description": "Algo 1"
+            "number": "795000",
+            "description": "Lectores en TripAdvisor"
         },
         {
-            "number": 9999,
-            "description": "Algo 2"
+            "number": "20 %",
+            "description": "Del mundo recorrido (526000 km)"
         },
         {
-            "number": 9999,
-            "description": "Algo 3"
+            "number": "+5 años",
+            "description": "Diseñando planes de viaje"
         },
         {
-            "number": 9999,
-            "description": "Algo 4"
+            "number": "Level 6",
+            "description": "Local Guide"
         }
     ];
 
@@ -31,8 +31,8 @@ const InterestingData = () => {
                     data.map((item, index) => {
                         return(
                             <div key={"interesting-"+index} className="gtt-interesting-data-card">
-                                <div key={"interesting-n-"+index} className="gtt-interesting-data-number">{item.number}</div>
-                                <div key={"interesting-d-"+index} className="gtt-interesting-data-description">{item.description}</div>
+                                <div key={"interesting-n-"+index} className="gtt-interesting-data-number-big">{item.number}</div>
+                                <div key={"interesting-d-"+index} className="gtt-interesting-data-description-big">{item.description}</div>
                             </div>
                         );
                     })
