@@ -796,3 +796,183 @@ footer {
 .react-multiple-carousel__arrow--right:before {
   content: ">" !important;
 }
+
+/*about us*/
+.gtt-aboutus-photo-container {
+  height: 440px;
+  max-height: 440px;
+  margin: 100px 40px 0px 40px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+
+  text-align: right;
+}
+
+.gtt-aboutus-photo {
+  max-height: inherit;
+
+  border-radius: 10px;
+
+  box-shadow: 3px 3px 10px;
+}
+
+.gtt-aboutus-description {
+  width: 55%;
+  z-index: 1;
+  position: relative;
+  margin-top: -220px;
+  margin-left: 40px;
+  padding: 20px 10% 30px 20px;
+
+  line-height: 37px;
+  font-family: 'Inter-Regular';
+  font-size: 24px;
+  color: white;
+  text-align: left;
+
+  background-color: var(--gtt-color-blue);
+
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+}
+
+.gtt-aboutus-tape-a {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  right: 0;
+  margin-top: -60px;
+  z-index: 3;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-aboutus-tape-b {
+  width: 140px;
+  height: 127px;
+  z-index: 3;
+  margin-top: 156px;
+  margin-right: -70px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-aboutus-tape-c {
+  width: 111px;
+  height: 139px;
+  z-index: 3;
+  margin-top: -80px;
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 880px) {
+  .gtt-aboutus-photo-container {
+    height: 260px;
+    max-height: 260px;
+    margin: 80px 10px 0px 10px;
+  }
+
+  .gtt-aboutus-tape-a {
+    width: 89.6px;
+    height: 89.6px;
+    margin-top: -45px;
+    margin-right: -18px;
+  }
+  .gtt-aboutus-tape-b {
+    width: 98px;
+    height: 88.9px;
+    margin-top: 145px;
+    margin-right: -52px;
+  }
+  .gtt-aboutus-tape-c {
+    width: 77.7px;
+    height: 97.3px;
+    margin-top: -56px;
+    margin-left: 5px;
+  }
+
+  .gtt-aboutus-description {
+    width: 70%;
+    margin-top: -70px;
+    padding: 80px 20px 30px 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 881px) and (max-width: 1000px) {
+  .gtt-aboutus-photo-container {
+    height: 330px;
+    max-height: 330px;
+    margin: 80px 10px 0px 10px;
+  }
+
+  .gtt-aboutus-tape-a {
+    width: 102.4px;
+    height: 102.4px;
+    margin-top: -50px;
+    margin-right: -20px;
+  }
+  .gtt-aboutus-tape-b {
+    width: 112px;
+    height: 101.6px;
+    margin-top: 208px;
+    margin-right: -54px;
+  }
+  .gtt-aboutus-tape-c {
+    width: 88.8px;
+    height: 111.2px;
+    margin-top: -60px;
+  }
+
+  .gtt-aboutus-description {
+    width: 65%;
+    margin-top: -70px;
+    padding: 80px 20px 30px 20px;
+
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1290px) {
+  .gtt-aboutus-description {
+    margin-top: -70px;
+    padding: 80px 20px 30px 20px;
+  }
+
+  .gtt-aboutus-tape-a {
+    width: 115.2px;
+    height: 115.2px;
+  }
+  .gtt-aboutus-tape-b {
+    width: 126px;
+    height: 114.3px;
+    margin-top: 315px;
+  }
+  .gtt-aboutus-tape-c {
+    width: 99.9px;
+    height: 125.1px;
+  }
+}
+
+@media (max-width: 620px) {
+  .gtt-aboutus-description {
+    width: 80%;
+    margin-top: -70px;
+    padding: 80px 20px 30px 20px;
+
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
