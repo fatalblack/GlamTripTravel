@@ -87,15 +87,15 @@ const ContactForm = () => {
                 <Col xs="12" md="8" className="gtt-form">
                     <div className="gtt-form-title">Formulario</div>
                     <Form onSubmit={ sendMail }>
-                        <Form.Group className="gtt-for-row" controlId="fullname">
+                        <Form.Group className="gtt-form-row" controlId="fullname">
                             <Form.Label className="gtt-form-label">Nombre</Form.Label>
                             <Form.Control type="text" placeholder="" className="gtt-form-input" required />
                         </Form.Group>
-                        <Form.Group className="gtt-for-row" controlId="contact">
+                        <Form.Group className="gtt-form-row" controlId="contact">
                             <Form.Label className="gtt-form-label">Email</Form.Label>
                             <Form.Control type="text" placeholder="" className="gtt-form-input" required />
                         </Form.Group>
-                        <Form.Group className="gtt-for-row" controlId="message">
+                        <Form.Group className="gtt-form-row" controlId="message">
                             <Form.Label className="gtt-form-label">Mensaje</Form.Label>
                             <Form.Control as="textarea" rows={3} className="gtt-form-input" required />
                         </Form.Group>

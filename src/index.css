@@ -27,10 +27,20 @@
   src: url(fonts/Inter-Regular.woff);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /*estilos finales*/
 body {
-  display: block;
+  /*display: block;*/
+  position: relative;
   overflow-x: hidden;
+  top: 0px !important;
+}
+
+.skiptranslate {
+  display: none;
 }
 
 #root {
@@ -48,6 +58,14 @@ body {
 
 .text-left {
   text-align: left;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.noMargin {
+  margin: 0px !important;
 }
 
 /*header y navbar*/
@@ -474,7 +492,7 @@ body {
   border-radius: 4px;
 }
 
-.gtt-for-row {
+.gtt-form-row {
   margin: 0px 78px 20px 78px;
 }
 
@@ -524,6 +542,18 @@ textarea.gtt-form-input {
   color: black;
 
   border: none;
+}
+
+@media (max-width: 768px){
+  .gtt-form-row {
+    margin: 0px 20px 20px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1050px){
+  .gtt-form-row {
+    margin: 0px 30px 20px 30px;
+  }
 }
 
 /*footer*/
@@ -652,7 +682,7 @@ footer {
 .gtt-custom-carousel-item {
   display: flex;
   justify-content: center;
-  margin: 0 1px;
+  margin: 0px;
 }
 
 @media (max-width: 768px) {
@@ -677,6 +707,20 @@ footer {
     margin-left: 5%;
 
     line-height: 27px;
+    font-size: 20px;
+  }
+
+  .gtt-customer-card-big-size {
+    width: 94%;
+    max-width: 94%;
+    margin: 14px 10px;
+  }
+
+  .gtt-customer-description-big-size {
+    width: 96%;
+    padding: 0px 10px;
+    margin-left: 2%;
+    line-height: 28px;
     font-size: 20px;
   }
 }
@@ -704,6 +748,20 @@ footer {
 
     line-height: 41px;
     font-size: 30px;
+  }
+
+  .gtt-customer-card-big-size {
+    width: 94%;
+    max-width: 94%;
+    margin: 14px 10px;
+  }
+
+  .gtt-customer-description-big-size {
+    width: 96%;
+    padding: 0px 10px;
+    margin-left: 2%;
+    line-height: 32px;
+    font-size: 24px;
   }
 }
 
@@ -903,7 +961,7 @@ footer {
   }
 
   .gtt-aboutus-description {
-    width: 70%;
+    width: 80%;
     margin-top: -70px;
     padding: 80px 20px 30px 20px;
 
@@ -937,7 +995,7 @@ footer {
   }
 
   .gtt-aboutus-description {
-    width: 65%;
+    width: 78%;
     margin-top: -70px;
     padding: 80px 20px 30px 20px;
 
@@ -968,7 +1026,7 @@ footer {
 
 @media (max-width: 620px) {
   .gtt-aboutus-description {
-    width: 80%;
+    width: 86%;
     margin-top: -70px;
     padding: 80px 20px 30px 20px;
 
@@ -978,48 +1036,255 @@ footer {
 }
 
 /* Estilos Servicios */
+.gtt-services-description {
+  margin: 10px 10px 20px 10px;
+  padding: 20px;
 
-.contenedor-services {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.texto-services {
-  background: #2b85a1;
+  line-height: 32px;
+  font-size: 24px;
   font-family: "Manjari-Regular";
-  font-size: 19px;
   color: white;
-  padding: 10px;
-  width: 50%;
-  box-sizing: border-box;
+  text-align: left;
+
+  background-color: var(--gtt-color-blue);
+  
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
 }
 
-.imagen-services {
-  width: 50%;
-  height: auto;
-  box-sizing: border-box;
+.gtt-services-image {
+  min-height: 570px;
+  z-index: 1;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 3px 3px 10px;
 }
 
-@media (max-width: 768px) {
-  .texto-services,
-  .imagen-services {
-    width: 100%;
+.gtt-services-box-title {
+  line-height: 59px;
+  font-size: 50px;
+  font-family: "Manjari-Regular";
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gtt-services-box-description {
+  padding: 30px;
+
+  line-height: 42px;
+  font-size: 25px;
+  font-family: "Manjari-Regular";
+  text-align: left;
+  color: white;
+  font-weight: 400;
+
+  background-color: var(--gtt-color-blue);
+  box-shadow: 3px 3px 10px;
+}
+
+.gtt-service-button {
+  padding: 14px 36px;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+
+  line-height: 23px;
+  font-size: 23px;
+  font-family: "Manjari-Regular";
+  color: black;
+  text-decoration: none;
+
+  background-color: var(--gtt-color-orange-alt);
+
+  border-radius: 5px;
+}
+
+.gtt-service-button:hover {
+  background-color: var(--gtt-color-orange-alt);
+
+  color: white;
+
+  border: none;
+}
+
+.gtt-services-carousel {
+  z-index: 1;
+
+  background-color: var(--gtt-color-orange);
+
+  box-shadow: 3px 3px 10px;
+}
+
+.gtt-services-carousel-image {
+  width: 100%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.gtt-services-tape-a {
+  width: 92px;
+  height: 128px;
+  position: absolute;
+  left: 0;
+  margin-top: -60px;
+  z-index: 3;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-b {
+  width: 139px;
+  height: 75px;
+  margin-left: -102px;
+  margin-top: -64px;
+  z-index: 3;
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-c {
+  width: 86px;
+  height: 126px;
+  position: absolute;
+  right: 0;
+  margin-top: -100px;
+  z-index: 3;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-d {
+  width: 140px;
+  height: 124px;
+  margin-left: calc(100% - 40px);
+  margin-top: -84px;
+  z-index: 3;
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-e {
+  width: 144px;
+  height: 94px;
+  margin-left: -98px;
+  margin-top: -76px;
+  z-index: 3;
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-f {
+  width: 92px;
+  height: 128px;
+  left: 0px;
+  margin-top: -36px;
+  z-index: 3;
+  position: absolute;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gtt-services-tape-g {
+  width: 70px;
+  height: 124px;
+  right: 0px;
+  margin-top: -36px;
+  z-index: 3;
+  position: absolute;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 880px) {
+  .gtt-services-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .gtt-services-box-title {
+    font-size: 35px;
+    line-height: 44px;
+  }
+
+  .gtt-services-box-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .gtt-services-tape-a {
+    left: -24px;
+    margin-top: -74px;
   }
 }
-.texto-services-2 {
-  background: #2b85a1;
-  font-family: "Manjari-Regular";
-  font-size: 22px;
-  color: white;
-  padding: 15px;
-  text-align: center;
+@media (min-width: 881px) and (max-width: 1000px) {
+  .gtt-services-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .gtt-services-box-title {
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .gtt-services-box-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .gtt-services-tape-a {
+    left: -24px;
+    margin-top: -74px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1290px) {
+  
 }
 
-.imagen-services-2 {
-  width: 50%;
-  height: auto;
-  box-sizing: border-box;
+@media (max-width: 620px) {
+  .gtt-services-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .gtt-services-box-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gtt-services-tape-b {
+    right: -70px;
+    position: absolute;
+  }
+
+  .gtt-services-tape-c,
+  .gtt-services-tape-f,
+  .gtt-services-tape-g {
+    display: none;
+  }
 }
