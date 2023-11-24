@@ -28,6 +28,7 @@ const AboutUs = () => {
               ¡Eso es lo que te ofrezco al diseñar tu experiencia de viaje personalizada!
             </div>
             <div className="gtt-aboutus-tape-c" style={{backgroundImage: "url('stickers/about-us-tape-3.png')"}}></div>
+            <div className="gtt-aboutus-tape-d" style={{backgroundImage: "url('stickers/about-us-tape-4.png')"}}></div>
         </div>
     </div>
   );

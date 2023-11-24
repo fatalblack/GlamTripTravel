@@ -99,7 +99,7 @@ const ContactForm = () => {
                             <Form.Label className="gtt-form-label">Mensaje</Form.Label>
                             <Form.Control as="textarea" rows={3} className="gtt-form-input" required />
                         </Form.Group>
-                        <Button type="submit" className="gtt-button-submit">Saber m&aacute;s</Button>
+                        <Button type="submit" className="gtt-button-submit">Enviar</Button>
                         <AlertDismissible show={alertShow} variant={alertVariant} title={alertTitle} message={alertMessage} closeCallback={alertCloseCallback} />
                     </Form>
                 </Col>

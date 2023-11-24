@@ -32,7 +32,12 @@ const ContactUs = () => {
                 {
                     contacts.map((contact, index) => {
                         return(
-                            <a key={"contact-"+index} className="gtt-contact-option" href={contact.link} target="_blank" rel="noopener noreferrer">
+                            <a key={"contact-"+index}
+                                className="gtt-contact-option"
+                                href={contact.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                translate="no">
                                 <div className="gtt-button-circle-icon-black" style={{backgroundImage:"url('"+contact.imagePath+"')"}}></div>
                                 {contact.text}
                             </a>

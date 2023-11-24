@@ -128,7 +128,7 @@ const Services = () => {
         </Col>
         <Col xs="12" md="6" className="gtt-services-box-description">
           <div className="gtt-services-tape-e" style={{backgroundImage: "url('stickers/tape-5.png')"}}></div>
-          <div className="gtt-services-box-title">Diseño de plan de viajes</div>
+          <div className="gtt-services-box-title" translate="no">FreeTour</div>
           <div>
             Te invitamos a descubrir los Secretos Artísticos de Córdoba en Nuestro Free tour de Arte Urbano y a sumergirte en las vibrantes calles de la ciudad y sus expresiones creativas que adorna cada rincón. Desde murales coloridos hasta obras provocativas, nuestro recorrido gratuito te llevara por un viaje único a través del Arte Urbano de Córdoba.
             <br />

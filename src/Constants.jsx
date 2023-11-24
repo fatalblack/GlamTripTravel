@@ -1,11 +1,11 @@
 //const CONFIG_EmailTo = "glamtriptravel.mail@gmail.com";
 const CONFIG_EmailTo = "plandeviajecordoba@gmail.com"
-const CONFIG_EmailSenderUrl = "http://pandoracodebox.com/MailSender/api/GTTMail";
+const CONFIG_EmailSenderUrl = "https://pandoracodebox.com/MailSender/api/GTTMail";
 const CONFIG_EmailSenderToken = "dsagasgsafsadhdsfhgfnvfgdrft4t546uydfgdft";
 const CONFIG_LinkWhatsapp = "https://api.whatsapp.com/send?phone=5493516364674";
 const CONFIG_TextWhatsapp = "+5493516364674";
 const CONFIG_LinkFacebook = "https://www.facebook.com/profile.php?id=100092352475491";
-const CONFIG_TextFacebook = "Glam Trip Cba";
+const CONFIG_TextFacebook = "GlamTrip Cba";
 const CONFIG_LinkLinkedin = "https://www.linkedin.com/company/glam-trip-travel-cordoba/";
 const CONFIG_TextLinkedin = "Glam Trip Travel";
 const CONFIG_LinkInstagram = "https://www.instagram.com/glam_trip_cba/";

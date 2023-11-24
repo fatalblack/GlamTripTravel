@@ -246,7 +246,7 @@ body {
   }
 
   .gtt-header-img {
-    width: 50%;
+    width: 60%;
     margin-top: -30px;
     aspect-ratio: 1;
   }
@@ -314,8 +314,9 @@ body {
   color: white;
   text-decoration: none;
 
+  background-color: var(--gtt-color-orange);
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid var(--gtt-color-orange);
 }
 
 .gtt-button .gtt-icon {
@@ -934,6 +935,19 @@ footer {
   background-size: contain;
 }
 
+.gtt-aboutus-tape-d {
+  width: 111px;
+  height: 139px;
+  z-index: 3;
+  margin-top: -138px;
+  margin-left: calc(58% - 78px);
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media (max-width: 880px) {
   .gtt-aboutus-photo-container {
     height: 260px;
@@ -959,6 +973,12 @@ footer {
     margin-top: -56px;
     margin-left: 5px;
   }
+  .gtt-aboutus-tape-d {
+    width: 77.7px;
+    height: 97.3px;
+    margin-top: -95px;
+    margin-left: calc(100% - 74px);
+  }
 
   .gtt-aboutus-description {
     width: 80%;
@@ -968,6 +988,24 @@ footer {
     font-size: 18px;
     line-height: 30px;
   }
+}
+@media (min-width: 621px) and (max-width: 765px) {
+  .gtt-aboutus-tape-d {
+    width: 77.7px;
+    height: 97.3px;
+    margin-top: -95px!important;
+    margin-left: calc(92% - 78px)!important;
+  }
+
+}
+@media (min-width: 766px) and (max-width: 880px) {
+  .gtt-aboutus-tape-d {
+    width: 77.7px;
+    height: 97.3px;
+    margin-top: -95px!important;
+    margin-left: calc(88% - 78px)!important;
+  }
+
 }
 @media (min-width: 881px) and (max-width: 1000px) {
   .gtt-aboutus-photo-container {
@@ -992,6 +1030,12 @@ footer {
     width: 88.8px;
     height: 111.2px;
     margin-top: -60px;
+  }
+  .gtt-aboutus-tape-d {
+    width: 88.8px;
+    height: 111.2px;
+    margin-top: -110px;
+    margin-left: calc(86% - 78px);
   }
 
   .gtt-aboutus-description {
@@ -1022,6 +1066,12 @@ footer {
     width: 99.9px;
     height: 125.1px;
   }
+  .gtt-aboutus-tape-d {
+    width: 99.9px;
+    height: 125.1px;
+    margin-top: -122px;
+    margin-left: calc(60% - 78px);
+  }
 }
 
 @media (max-width: 620px) {
@@ -1033,7 +1083,21 @@ footer {
     font-size: 16px;
     line-height: 28px;
   }
+
+  .gtt-aboutus-tape-b {
+    display: none;
+  }
 }
+@media (min-width: 1400px) {
+  .gtt-aboutus-photo-container {
+    height: 480px;
+    max-height: 480px;
+  }
+  .gtt-aboutus-tape-b {
+    margin-top: 192px;
+  }
+}
+
 
 /* Estilos Servicios */
 .gtt-services-description {
