@@ -1,5 +1,5 @@
-//const CONFIG_EmailTo = "glamtriptravel.mail@gmail.com";
-const CONFIG_EmailTo = "plandeviajecordoba@gmail.com"
+const CONFIG_EmailTo = "glamtriptravel.mail@gmail.com";
+//const CONFIG_EmailTo = "plandeviajecordoba@gmail.com"
 const CONFIG_EmailSenderUrl = "https://pandoracodebox.com/MailSender/api/GTTMail";
 const CONFIG_EmailSenderToken = "dsagasgsafsadhdsfhgfnvfgdrft4t546uydfgdft";
 const CONFIG_LinkWhatsapp = "https://api.whatsapp.com/send?phone=5493516364674";
