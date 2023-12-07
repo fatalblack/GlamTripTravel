@@ -17,4 +17,7 @@ La página se refrescará cada vez que se realice un cambio en el código.
 Además podrá ver los errores tanto en pantalla como consola.
 
 ### `npm run build`
-Construye el proyecto compilado en la carpeta `build`.
+Construye el proyecto compilado en modo desarrollo en la carpeta `build`.
+
+### `npm run buildProd`
+Construye el proyecto compilado en modo productivo en la carpeta `build`.
